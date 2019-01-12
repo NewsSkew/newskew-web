@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    /* Colors */
+    --blue: #002db3;
+    --dark-blue: #00134d;
+    --primary-grey: #484848;
+    --bg-color: #f9f9f9;
+
+    /* Text */
+    --dark-text: #484848;
+
+    /* Breakpoints */
+    --md-bp: 900px;
+    --sm-bp: 768px;
+    --xs-bp: 400px;
+}
+
+html, body, app-root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
