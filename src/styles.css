@@ -4,22 +4,38 @@
     /* Colors */
     --blue: #002db3;
     --dark-blue: #00134d;
-    --primary-grey: #484848;
-    --bg-color: #f9f9f9;
+    --grey: #484848;
+    --dark-grey: #242424;
+    --eggshell: #f9f9f9;
+
+   /* Background Colors */ 
+   --primary-bg-color: var(--eggshell);
 
     /* Text */
     --dark-text: #484848;
+
+    /* Box Shadows */
+    --primary-box-shadow: 0 0 4px 2px var(--dark-grey);
 
     /* Breakpoints */
     --md-bp: 900px;
     --sm-bp: 768px;
     --xs-bp: 400px;
+
+    /* Heights */
+    --topnav-height: 100px;
+    --sidenav-width: 100px;
 }
 
-html, body, app-root {
+html, body {
     height: 100%;
 }
 
 body {
     margin: 0;
+    background-color: var(--blue);
+}
+
+* {
+    box-sizing: border-box;
 }

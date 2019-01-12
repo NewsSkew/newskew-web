@@ -1,0 +1,7 @@
+:host {
+    display: flex;
+    height: 100%;
+    background-color: var(--primary-bg-color);
+    box-shadow: var(--primary-box-shadow);
+    border-top-left-radius: 4px;
+}
