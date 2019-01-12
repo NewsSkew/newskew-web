@@ -1,3 +1,12 @@
 <div class="article-card">
-  <app-radial-voter></app-radial-voter>
+  <h4>
+    <a (click)="goToArticle()"
+      class="span">{{ article.title }}</a>
+    by
+    <a (click)="goToAuthor()"
+      class="span">{{ article.author.firstName }} {{ article.author.lastName }}</a>
+    from
+    <a (click)="goToPublisher()"
+      class="span">{{ article.publisher.name }}</a>
+  </h4>
 </div>

@@ -1,3 +1,2 @@
-<div class="body">
-  <!-- <app-article-card></app-article-card> -->
-</div>
+<app-article-card *ngFor="let article of articles"
+  [article]="article"></app-article-card>
