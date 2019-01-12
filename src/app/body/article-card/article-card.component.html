@@ -1,12 +1,22 @@
-<div class="article-card">
-  <h4>
-    <a (click)="goToArticle()"
-      class="span">{{ article.title }}</a>
-    by
-    <a (click)="goToAuthor()"
-      class="span">{{ article.author.firstName }} {{ article.author.lastName }}</a>
-    from
-    <a (click)="goToPublisher()"
-      class="span">{{ article.publisher.name }}</a>
-  </h4>
+<div class="flex-col">
+  <app-radial-voter [article]="article"></app-radial-voter>
+  <div class="flex-row">
+    <span>
+      {{ article.publisher.name }}
+    </span>
+    <h4>
+      <a (click)="goToArticle()"
+        class="span">{{ article.title }}</a>
+      from
+      <a (click)="goToPublisher()"
+        class="span">{{ article.publisher.name }}</a>
+    </h4>
+    <div class="flex-col">
+      <span class="flex-child-right">
+        By
+        <a (click)="goToAuthor()"
+          class="span">{{ article.author.firstName }} {{ article.author.lastName }}</a>
+      </span>
+    </div>
+  </div>
 </div>

@@ -9,6 +9,7 @@ export class ArticleFactory {
     constructor() { }
 
     getRandomArticle() {
+        const randomSkew = Math.random() * Math.PI * 2;
         const randomArticle = new Article(
             `Article #${this.articleCount}`,
             'https://www.google.com',
@@ -20,7 +21,8 @@ export class ArticleFactory {
                 `Publisher${this.articleCount}`,
                 "www.twitter.com",
                 null
-            )
+            ),
+            randomSkew
         );
 
         this.articleCount++;

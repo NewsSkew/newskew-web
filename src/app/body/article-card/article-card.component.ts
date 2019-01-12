@@ -13,7 +13,6 @@ export class ArticleCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.article);
   }
 
 }

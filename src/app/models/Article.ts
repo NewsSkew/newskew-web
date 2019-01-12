@@ -10,12 +10,14 @@ export class Article extends BaseDomainClass {
     author: Author;
     publisherId: string;
     publisher: Publisher;
+    skew: number;
 
     constructor(
         title: string,
         url: string,
         author: Author,
-        publisher: Publisher
+        publisher: Publisher,
+        skew: number
     ) {
         super();
 
@@ -23,5 +25,6 @@ export class Article extends BaseDomainClass {
         this.url = url;
         this.author = author;
         this.publisher = publisher;
+        this.skew = skew;
     }
 }

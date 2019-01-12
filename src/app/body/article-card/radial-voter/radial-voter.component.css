@@ -1,10 +1,8 @@
-.radial-voter {
-    background-color: grey;
+:host {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-}
-
-app-radial-pin {
-    position: absolute;
+    margin: 8px;
+    position: relative;
+    border: var(--primary-border);
 }

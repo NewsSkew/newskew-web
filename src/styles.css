@@ -45,6 +45,7 @@ html, body {
 body {
     margin: 0;
     background-color: var(--blue);
+    font-family: 'Bitter', serif;
 }
 
 a {
@@ -61,4 +62,23 @@ a:active {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bitter', serif;
+}
+
+/* Generic Classes */
+.flex-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.flex-child-right {
+    margin-left: auto;
 }

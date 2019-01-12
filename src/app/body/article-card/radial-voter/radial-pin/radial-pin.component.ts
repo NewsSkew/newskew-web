@@ -19,6 +19,7 @@ export class RadialPinComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
+		console.log(this.radians);
 		this.setStyles();
 	}
 
