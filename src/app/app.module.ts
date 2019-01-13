@@ -6,6 +6,8 @@ import { BodyComponent } from './body/body.component';
 import { ArticleCardComponent } from './body/article-card/article-card.component';
 import { RadialVoterComponent } from './body/article-card/radial-voter/radial-voter.component';
 import { RadialPinComponent } from './body/article-card/radial-voter/radial-pin/radial-pin.component';
+import { TopnavComponent } from './topnav/topnav.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { RadialPinComponent } from './body/article-card/radial-voter/radial-pin/
     BodyComponent,
     ArticleCardComponent,
     RadialVoterComponent,
-    RadialPinComponent
+    RadialPinComponent,
+    TopnavComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule

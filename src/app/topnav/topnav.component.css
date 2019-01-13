@@ -1,0 +1,9 @@
+:host {
+    height: var(--topnav-height);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 15px;
+    color: white;
+    font-variant: small-caps;
+}

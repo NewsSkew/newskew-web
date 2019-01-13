@@ -1,7 +1,4 @@
-app-body {
-    position: relative;
-    left: var(--sidenav-width);
-    top: var(--topnav-height);
-    width: calc(100% - var(--sidenav-width));
-    height: calc(100% - var(--topnav-height))
+:host {
+    display: flex;
+    flex-direction: row;
 }

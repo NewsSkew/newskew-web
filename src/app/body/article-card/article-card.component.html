@@ -1,17 +1,15 @@
-<div class="flex-col">
+<div class="flex-row">
   <app-radial-voter [article]="article"></app-radial-voter>
-  <div class="flex-row">
-    <span>
-      {{ article.publisher.name }}
-    </span>
+  <div class="flex-col">
     <h4>
       <a (click)="goToArticle()"
         class="span">{{ article.title }}</a>
-      from
-      <a (click)="goToPublisher()"
-        class="span">{{ article.publisher.name }}</a>
     </h4>
-    <div class="flex-col">
+    <div class="flex-row flex-row-bottom">
+      <span>
+        From
+        <a class="span">{{ article.publisher.name }}</a>
+      </span>
       <span class="flex-child-right">
         By
         <a (click)="goToAuthor()"
