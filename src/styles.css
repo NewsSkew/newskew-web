@@ -2,29 +2,40 @@
 
 :root {
     /* Colors */
+    --red: #DB5461;
     --purple: rgb(160, 81, 250);
+    --deep-purple: #0D0630;
     --light-blue: rgb(31, 81, 231);
+    --deep-koamaru: #2B4162;
+    --space-cadet: #18314F;
+    --queen-blue: #3C6997;
     --blue: rgba(0, 45, 179);
     --dark-blue: #00134d;
     --grey: #484848;
     --light-grey: #ababab;
     --dark-grey: #242424;
     --eggshell: #f9f9f9;
+    --babypowder: #FFFFFA;
 
    /* Background Colors */ 
-   --primary-bg-color: var(--eggshell);
+   --primary-bg-color: var(--space-cadet);
+   --secondary-bg-color: var(--deep-koamaru);
+   --tertiary-bg-color: var(--space-cadet);
 
     /* Text */
     --dark-text: var(--grey);
+    --primary-text-color: var(--babypowder);
+    --a-color: var(--primary-text-color);
 
     /* Box Shadows */
-    --primary-box-shadow: 0 0 4px 1px var(--light-grey);
+    --primary-box-shadow: 0 0 4px 1px transparent;
 
     /* Borders */
-    --primary-border-color: var(--light-grey);
+    --primary-border-color: var(--queen-blue);
     --primary-border: 1px solid var(--primary-border-color);
 
     /* Breakpoints */
+    --lg-bp: 1200px;
     --md-bp: 900px;
     --sm-bp: 768px;
     --xs-bp: 400px;
@@ -44,12 +55,14 @@ html, body {
 
 body {
     margin: 0;
-    background-color: var(--blue);
     font-family: 'Bitter', serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    border: var(--primary-border);
 }
 
 a {
-    color: var(--light-blue);
+    color: var(--a-color);
     text-decoration: none;
     cursor: pointer;
     transition: color 150ms ease;
@@ -57,7 +70,12 @@ a {
 
 a:hover,
 a:active {
-    color: var(--purple);
+    color: var(--red);
+}
+
+a:active {
+    outline: 1px solid var(--red);
+    -moz-outline-radius: 4px;
 }
 
 h1, h2, h3, h4, h5, h6 {

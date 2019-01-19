@@ -7,3 +7,9 @@
     color: white;
     font-variant: small-caps;
 }
+
+.newsskew:hover,
+.newsskew:active {
+    transition: letter-spacing 150ms ease;
+    letter-spacing: 0.1em;
+}

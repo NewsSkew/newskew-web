@@ -1,5 +1,6 @@
 :host {
     height: 100%;
-    width: var(--sidenav-width);
-    display: flex;
+    min-width: var(--sidenav-width);
+    max-width: 20vw;
+    flex: 1;
 }
